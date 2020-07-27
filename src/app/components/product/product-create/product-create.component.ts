@@ -15,6 +15,8 @@ export class ProductCreateComponent implements OnInit {
     price: null,
   }
 
+  willRedirect: boolean = false
+
   constructor(
     private productService: ProductService,
     private router: Router,
@@ -26,7 +28,11 @@ export class ProductCreateComponent implements OnInit {
   createProduct(): void {
     this.productService.create(this.product).subscribe(() => {
       this.productService.showMessage('Product created successfully.')
-      this.router.navigate(['/products'])
+      if (this.willRedirect) this.router.navigate(['/products'])
+      else this.product = {
+        name: '',
+        price: null,
+      }
     })
   }
 

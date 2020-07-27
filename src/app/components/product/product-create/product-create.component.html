@@ -1,16 +1,20 @@
 <mat-card>
   <mat-card-title>Create product</mat-card-title>
   <form>
-    <mat-form-field>
+    <mat-form-field color="accent">
       <input matInput placeholder="Name" [(ngModel)]="product.name" name="name">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field color="accent">
       <input matInput placeholder="Price" [(ngModel)]="product.price" name="price">
     </mat-form-field>
+
+    <mat-checkbox [(ngModel)]="willRedirect" name="redirect">
+      Go back to product list after creation
+    </mat-checkbox>
   </form>
 
   <button mat-raised-button color="primary" (click)="createProduct()">
-    Save
+    Create
   </button>
   
   <button mat-raised-button (click)="cancel()">

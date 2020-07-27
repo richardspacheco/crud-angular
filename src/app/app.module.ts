@@ -23,6 +23,7 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button'
+import { MatCheckboxModule } from '@angular/material/checkbox'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { FormsModule } from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
@@ -62,6 +63,7 @@ registerLocaleData(localePt)
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
+    MatCheckboxModule,
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
