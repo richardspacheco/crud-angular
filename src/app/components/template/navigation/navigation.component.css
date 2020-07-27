@@ -9,5 +9,6 @@
 .content {
   box-sizing: border-box;
   min-height: calc(100vh - 128px);
+  margin: 64px 0;
   padding: 16px;
 }
