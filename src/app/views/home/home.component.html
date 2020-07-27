@@ -1,0 +1,11 @@
+<mat-card class="home mat-elevation-z3">
+  <mat-card-title class="title">Welcome!</mat-card-title>
+  <mat-card-subtitle class="subtitle">
+    Example of a product management system in Angular
+  </mat-card-subtitle>
+
+  <p>Supports the following operations:</p>
+  <ul>
+    <li *appFor="let operation in operations">{{operation}}</li>
+  </ul>
+</mat-card>

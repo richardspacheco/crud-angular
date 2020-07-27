@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+
+.edit {
+  margin-right: 16px;
+}
+
+.edit > i {
+  color: #d9c626;
+}
+
+.delete > i {
+  color: #e35e6b;
+}

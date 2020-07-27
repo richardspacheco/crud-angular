@@ -1,0 +1,13 @@
+.sidenav {
+  width: 200px;
+}
+
+.sidenav i {
+  padding-right: 10px;
+}
+
+.content {
+  box-sizing: border-box;
+  min-height: calc(100vh - 128px);
+  padding: 16px;
+}
